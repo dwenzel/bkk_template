@@ -27,7 +27,7 @@
  * multilanguage aware if the name starts with 'LLL:'
  *
  */
-class Tx_Modernpackage_Hooks_ItemsProcFunc {
+class Tx_BkkTemplate_Hooks_ItemsProcFunc {
 
 	/**
 	 * Labels of a be_layout record
@@ -36,7 +36,7 @@ class Tx_Modernpackage_Hooks_ItemsProcFunc {
 	 * @return void
 	 */
 	public function getLabel(array &$params) {
-		if (t3lib_div::isFirstPartOfStr($params['row']['title'], 'LLL:')) {
+		if (\TYPO3\CMS\Core\Utility\GeneralUtility::isFirstPartOfStr($params['row']['title'], 'LLL:')) {
 			$params['title'] = $GLOBALS['LANG']->sL($params['row']['title'], TRUE);
 		} else {
 			$params['title'] = $params['row']['title'];
