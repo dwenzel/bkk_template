@@ -14,11 +14,11 @@
 # *******************************************************************
 
 plugin.theme_configuration {
-	#url = http://dev.project.local/
+	url = http://localhost:8333/
 
 	general {
 		googleanalytics = 0
-		pageTitle.prefix = !!DEV!! Modern Package -
+		pageTitle.prefix = !!DEV!! BKK -
 	}
 
 	assets {
