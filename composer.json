@@ -1,0 +1,11 @@
+{
+"name": "dwenzel/bkk-template",
+"type": "typo3-cms-extension",
+  "description": "Template provider extension for bolschewistischekurkapelle.org base od Georg Ringers Modern Template extension.",
+"authors": [
+    {
+      "name": "Dirk Wenzel",
+      "email": "der-wenzel@gmx.de"
+    }
+  ]
+}
