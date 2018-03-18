@@ -14,7 +14,7 @@
 # *******************************************************************
 
 plugin.theme_configuration {
-	url = http://localhost:8333/
+	url = http://bkk.local/
 
 	general {
 		googleanalytics = 0

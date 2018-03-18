@@ -16,16 +16,15 @@ styles.content.imgtext.maxW = 1200
 #	Constants of the PRODUCTION mode
 #-------------------------------------------------------------------------------
 plugin.theme_configuration {
-	url = http://localhost/master/
+	url = http://bolschewistischekurkapelle.org/
 
 	general {
-		adminPanel = 1
+		adminPanel = 0
 		copyright_information.link = 242
-		googleanalytics = 1
-		googleanalytics.code = UA-XXXXXXXXXXX
+		googleanalytics = 0
 
 		pageTitle {
-			prefix = Modern Package -
+			prefix = Bolschewistische Kurkapelle Schwarz-Rot -
 			suffix =
 		}
 	}

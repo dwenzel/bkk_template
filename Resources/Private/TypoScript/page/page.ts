@@ -34,7 +34,7 @@ page {
 			5 = TEXT
 			5.value = EXT:bkk_template/Resources/Private/Templates/content-2col-25-75.html
 		}
-		#partialRootPath = EXT:bkk_template/Resources/Private/Templates/
+		partialRootPath = EXT:bkk_template/Resources/Private/Templates/Partials/
 		layoutRootPath = EXT:bkk_template/Resources/Private/Templates/Layouts/
 		variables {
 
@@ -55,8 +55,6 @@ page {
 		file6.media = screen,print
 		file6 = EXT:bkk_template/Resources/Public/Template/css/yoxview.css
 		file6.media = screen,print
-		file8 = EXT:bkk_template/Resources/Public/Template/css/jquery-ui-1.10.3.custom.min.css
-		file8.media = screen,print
 	}
 
 	# JS files to be included
@@ -80,7 +78,6 @@ page {
 
 	includeJSFooterlibs {
 		jQuery = EXT:bkk_template/Resources/Public/Template/js/jquery-1.9.1.js
-		jQueryUi = EXT:bkk_template/Resources/Public/Template/js/jquery-ui-1.10.3.custom.min.js
 	}
 
 

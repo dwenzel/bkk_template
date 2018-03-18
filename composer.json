@@ -1,7 +1,7 @@
 {
   "name": "dwenzel/bkk-template",
   "type": "typo3-cms-extension",
-  "license": "GPL-2.0-or-later"
+  "license": "GPL-3.0-or-later",
   "description": "Template provider extension for bolschewistischekurkapelle.org base od Georg Ringers Modern Template extension.",
   "authors": [
     {
