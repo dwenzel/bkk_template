@@ -25,7 +25,7 @@
 #-------------------------------------------------------------------------------
 lib.navigation.main = COA
 lib.navigation.main {
-
+	entryLevel = 0
 	10 = HMENU
 	10 {
 		1 = TMENU
@@ -299,17 +299,16 @@ lib.navigation.footer {
 
 			NO = 1
 			NO {
-				wrapItemAndSub = <li>|</li>
+				wrapItemAndSub = <li class = "quicklink_item">|</li>
 				ATagTitle.field = subtitle // title
+				linkWrap = |&nbsp;&#124;&nbsp; |*| |&nbsp;&#124;&nbsp; |*| |
 				stdWrap.htmlSpecialChars = 1
 			}
+			ACT < .NO
+			ACT {
+				wrapItemAndSub = <li class = "quicklink_item_activ"> | <li>
+			}
 		}
-	}
-
-	20 = TEXT
-	20 {
-		data = LLL:EXT:bkk_template/Resources/Private/Language/locallang.xml:print
-		wrap = <li class="hidden-phone"><a href="javascript:window.print()">|</a></li>
 	}
 }
 

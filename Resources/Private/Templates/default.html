@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Bolschewistische Kurkapelle Schwarz-Rot</title>
+<link href="stylesheets/main.css" media="screen" rel="Stylesheet" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+
+<body>
+<div id=wrap>
+	<div id="top">
+		<div class="top-tl">
+			<div class="top-tr">
+			</div>
+		</div>
+	</div>
+	<f:render partial="Page/header"/>
+
+ 	<div id="stage-wrap">
+		<div id="stage">
+            <f:cObject typoscriptObjectPath="lib.content.stage" />
+ 	 	</div>
+	    <div id="mainnav">
+            <f:cObject typoscriptObjectPath="lib.navigation.main" />
+	    </div>
+ 	</div>
+    
+ <div id=content_col>
+   <div id=content>
+	   <f:cObject typoscriptObjectPath="lib.content.main" />
+   </div>
+    <div id=right_col>
+     <div id=right_content>
+		 <f:cObject typoscriptObjectPath="lib.content.right" />
+	 </div>
+    </div>
+ </div>
+ <div id=unten>
+  <!-- ###UNTEN### START -->
+  <!-- ###UNTEN### END -->
+ </div>
+
+ <div id="bottom">
+ 	<div class="bottom-bl">
+ 		<div class="bottom-br">
+ 			<div id="quicklinks"">
+	 			<ul>
+                    <f:cObject typoscriptObjectPath="lib.navigation.footer" />
+	 			</ul>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+</div>
+
+</body>
+</html>

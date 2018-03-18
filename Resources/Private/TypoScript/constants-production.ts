@@ -36,7 +36,7 @@ plugin.theme_configuration {
 
 	navigation {
 		top = 17
-		footer = 12
+		footer = 6
 	}
 
 	extensions {

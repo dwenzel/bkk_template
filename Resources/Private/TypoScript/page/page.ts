@@ -24,15 +24,22 @@ page {
 			key.override.field = backend_layout
 
 			default = TEXT
-			default.value = EXT:bkk_template/Resources/Private/Templates/content-2col-75-25.html
+			#default.value = EXT:bkk_template/Resources/Private/Templates/content-2col-75-25.html
+			default.value = EXT:bkk_template/Resources/Private/Templates/default.html
 			1 = TEXT
-			1.value = EXT:bkk_template/Resources/Private/Templates/content-1col.html
+			1.value = EXT:bkk_template/Resources/Private/Templates/ohne_stage.html
+			2 = TEXT
+			2.value = EXT:bkk_template/Resources/Private/Templates/breit.html
 			3 = TEXT
-			3.value = EXT:bkk_template/Resources/Private/Templates/content-3col.html
+			3.value = EXT:bkk_template/Resources/Private/Templates/login.html
 			4 = TEXT
-			4.value = EXT:bkk_template/Resources/Private/Templates/special-home.html
+			4.value = EXT:bkk_template/Resources/Private/Templates/breit_2spaltig.html
 			5 = TEXT
-			5.value = EXT:bkk_template/Resources/Private/Templates/content-2col-25-75.html
+			5.value = EXT:bkk_template/Resources/Private/Templates/links240_mitte540.html
+			6 = TEXT
+			6.value = EXT:bkk_template/Resources/Private/Templates/splash.html
+			7 = TEXT
+			7.value = EXT:bkk_template/Resources/Private/Templates/links240_mitte540_stage.html
 		}
 		partialRootPath = EXT:bkk_template/Resources/Private/Templates/Partials/
 		layoutRootPath = EXT:bkk_template/Resources/Private/Templates/Layouts/
@@ -45,7 +52,7 @@ page {
 	includeCSS {
 		file1 = EXT:bkk_template/Resources/Public/Template/css/bootstrap.min.css
 		file1.media = screen,print
-		file2 = EXT:bkk_template/Resources/Public/Template/css/style.css
+		file2 = EXT:bkk_template/Resources/Public/Template/css/main.css
 		file2.media = screen,print
 		file3 = EXT:bkk_template/Resources/Public/Template/css/mediaqueries.css
 		file3.media = screen,print

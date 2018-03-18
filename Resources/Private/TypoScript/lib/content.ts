@@ -12,10 +12,15 @@
 # **********************************************************
 
 #-------------------------------------------------------------------------------
-#	CONTENT: Main Content (colPos = 0)
+#	CONTENT: Stage Content (colPos = 0)
 #-------------------------------------------------------------------------------
-lib.content.main = COA
-lib.content.main {
+lib.content.stage = COA
+lib.content.stage {
+	slide = -1
+	slide {
+		collect = -1
+		collectReverse = 1
+	}
 	stdWrap.wrap = <div class="content-main-inner">|</div>
 	stdWrap.innerWrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
 	10 < styles.content.get
@@ -23,37 +28,42 @@ lib.content.main {
 lib.content.0 < lib.content.main
 
 #-------------------------------------------------------------------------------
-#	CONTENT: Left Content (colPos = 1)
+#	CONTENT: Main Content (colPos = 1)
 #-------------------------------------------------------------------------------
-lib.content.left = COA
-lib.content.left {
-	stdWrap.wrap = <div class="content-left-inner">|</div>
+lib.content.main = COA
+lib.content.main {
+	stdWrap.wrap = <div class="roundBox"><div class="padd15"> | </div></div>
 	stdWrap.innerWrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
 	10 < styles.content.getLeft
 }
-lib.content.1 < lib.content.left
+lib.content.1 < lib.content.main
 
 #-------------------------------------------------------------------------------
 #	CONTENT: Right Content (colPos = 2)
 #-------------------------------------------------------------------------------
 lib.content.right = COA
 lib.content.right {
-	stdWrap.wrap = <div class="content-right-inner">|</div>
+	slide = -1
+	slide {
+		collect = -1
+		collectReverse = 0
+	}
+	stdWrap.wrap =  <div class="roundBox"><div class="padd15"> | </div></div>
 	stdWrap.innerWrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
 	10 < styles.content.getRight
 }
 lib.content.2 < lib.content.right
 
 #-------------------------------------------------------------------------------
-#	CONTENT: Border Content (colPos = 3)
+#	CONTENT: Left Content (colPos = 3)
 #-------------------------------------------------------------------------------
-lib.content.border = COA
-lib.content.border {
-	stdWrap.wrap = <div class="content-border-inner">|</div>
+lib.content.left = COA
+lib.content.left {
+	stdWrap.wrap = <div class="roundBox"><div class="padd15"> | </div></div>
 	stdWrap.innerWrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
 	10 < styles.content.getBorder
 }
-lib.content.3 < lib.content.border
+lib.content.3 < lib.content.left
 
 #-------------------------------------------------------------------------------
 #	CONTENT: colPos = 4
