@@ -10,7 +10,7 @@
 # Basis of all changes to extensions (also sysexts)
 # **********************************************************
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/Extensions/extbase.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/Extensions/t3themes_dopetrope.ts">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/Extensions/indexed_search.ts">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/Extensions/news/news.ts">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/Extensions/formhandler/formhandler.ts">

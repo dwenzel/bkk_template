@@ -12,10 +12,10 @@
 # **********************************************************
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/Extensions/_main.ts">
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/content/_main.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/content/_main.ts">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/lib/_main.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/page/page.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/page/configuration.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/page/configuration_language.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/page/seo.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/page/page.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/page/configuration.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/page/configuration_language.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bkk_template/Resources/Private/TypoScript/page/seo.ts">

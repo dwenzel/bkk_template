@@ -1,0 +1,52 @@
+body {
+    background: #000;
+    background-image: none;
+}
+
+#header h1 {
+    color: #cc8414;
+}
+#nav > ul > li > a {
+    color: #d5d5d5;
+}
+#nav > ul > li.current > a {
+    background: #bf0404;
+}
+#nav > ul > li:hover > a,
+#nav > ul > li.active > a {
+    background: #e4e4e4;
+    color: #000;
+}
+
+@media screen and (max-width: 736px) {
+    #main-wrapper {
+        padding:0;
+    }
+}
+@media screen and (min-width: 737px) {
+}
+.row {
+    margin: -70px 0 -2px;
+}
+#banner {
+    position: relative;
+    margin: 0;
+    height: 48em;
+}
+
+
+
+#banner header {
+    background-color: rgba(34, 30, 31, 0.8);
+}
+#banner header p {
+    color: #d8d6ae;
+}
+
+#footer-nav li {
+    display: inline-table;
+}
+
+#nav > ul > li > a {
+    border-radius: 0;
+}

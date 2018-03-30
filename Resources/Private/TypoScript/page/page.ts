@@ -12,9 +12,9 @@
 # including template, CSS + JS files
 # **********************************************************
 
-page = PAGE
+#page = PAGE
 page {
-
+/*
 	# Page template
 	10 = FLUIDTEMPLATE
 	10 {
@@ -47,33 +47,33 @@ page {
 
 		}
 	}
-
+*/
 	# CSS files to be included
 	includeCSS {
-		file1 = EXT:bkk_template/Resources/Public/Template/css/bootstrap.min.css
-		file1.media = screen,print
-		file2 = EXT:bkk_template/Resources/Public/Template/css/main.css
-		file2.media = screen,print
-		file3 = EXT:bkk_template/Resources/Public/Template/css/mediaqueries.css
-		file3.media = screen,print
-		file5 = EXT:bkk_template/Resources/Public/Template/css/flexslider.css
-		file5.media = screen,print
-		file6 = EXT:bkk_template/Resources/Public/Template/css/responsiveTable.css
-		file6.media = screen,print
-		file6 = EXT:bkk_template/Resources/Public/Template/css/yoxview.css
-		file6.media = screen,print
+		#file1 = EXT:bkk_template/Resources/Public/Template/css/bootstrap.min.css
+		#file1.media = screen,print
+		#kkMain = EXT:bkk_template/Resources/Public/Template/css/main.css
+		#bkkMain.media = screen,print
+		#file3 = EXT:bkk_template/Resources/Public/Template/css/mediaqueries.css
+		#file3.media = screen,print
+		#file5 = EXT:bkk_template/Resources/Public/Template/css/flexslider.css
+		#file5.media = screen,print
+		#file6 = EXT:bkk_template/Resources/Public/Template/css/responsiveTable.css
+		#file6.media = screen,print
+		#file6 = EXT:bkk_template/Resources/Public/Template/css/yoxview.css
+		#file6.media = screen,print
 	}
 
 	# JS files to be included
-	includeJSFooter {
-		bootstrap = EXT:bkk_template/Resources/Public/Template/js/bootstrap.min.js
-		flexslider = EXT:bkk_template/Resources/Public/Template/js/jquery.flexslider-min.js
-		yoxview = EXT:bkk_template/Resources/Public/Template/js/jquery.yoxview-2.21.min.js
-		placeholder = EXT:bkk_template/Resources/Public/Template/js/jquery.placeholder.min.js
-		responsive = EXT:bkk_template/Resources/Public/Template/js/respond.min.js
-		customjs = EXT:bkk_template/Resources/Public/Template/js/script.js
-	}
-
+	#includeJSFooter {
+		#bootstrap = EXT:bkk_template/Resources/Public/Template/js/bootstrap.min.js
+		#flexslider = EXT:bkk_template/Resources/Public/Template/js/jquery.flexslider-min.js
+		#yoxview = EXT:bkk_template/Resources/Public/Template/js/jquery.yoxview-2.21.min.js
+		#placeholder = EXT:bkk_template/Resources/Public/Template/js/jquery.placeholder.min.js
+		#responsive = EXT:bkk_template/Resources/Public/Template/js/respond.min.js
+		#customjs = EXT:bkk_template/Resources/Public/Template/js/script.js
+	#}
+/*
 	includeJS {
 		html5shiv = EXT:bkk_template/Resources/Public/Template/js/html5shiv.js
 		html5shiv {
@@ -86,9 +86,10 @@ page {
 	includeJSFooterlibs {
 		jQuery = EXT:bkk_template/Resources/Public/Template/js/jquery-1.9.1.js
 	}
-
+*/
 
 	# Add some good classes to the bodytag to make a styling of special pages easier
+/*
 	bodyTagCObject = COA
 	bodyTagCObject   {
 		stdWrap.wrap = <body class="|">
@@ -129,6 +130,6 @@ page {
 			value = Page: {page:uid} | Pid: {page:pid} | Sys_language uid : {TSFE:sys_language_uid} | Sys_language content: {TSFE:sys_language_content}
 		}
 	}
-
+*/
 }
 

@@ -1,0 +1,71 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <!-- Footer -->
+    <f:switch expression="{t3themesConf.footerFullWidth}">
+        <!-- Background > Container -->
+        <f:case value="onlybg">
+            <div style="{f:if(condition:'{t3themesConf.footerBgColor}',then:'background-color:{t3themesConf.footerBgColor}',else:'transparent')};">
+                <div class="container">
+
+                    <f:render section="LayoutInner" arguments="{_all}" />
+
+                </div>
+            </div>
+        </f:case>
+        <f:case value="container">
+            <!-- Background + Container -->
+            <div style="{f:if(condition:'{t3themesConf.footerBgColor}',then:'background-color:{t3themesConf.footerBgColor}',else:'transparent')};" class="container">
+
+                <f:render section="LayoutInner" arguments="{_all}" />
+
+            </div>
+        </f:case>
+        <f:case default="TRUE">
+            <!-- Background (No Container) -->
+            <div style="{f:if(condition:'{t3themesConf.footerBgColor}',then:'background-color:{t3themesConf.footerBgColor}',else:'transparent')};">
+
+                <f:render section="LayoutInner" arguments="{_all}" />
+
+            </div>
+        </f:case>
+    </f:switch>
+
+    <f:section name="LayoutInner">
+
+        <!-- Footer -->
+        <div id="footer-wrapper">
+            <section id="footer">
+
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+                        <f:if condition="{t3themesConf.colPos1}">
+                            <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{pageUid: '{data.uid}', colPos: '{t3themesConf.colPos1}'}" />
+                        </f:if>
+                    </div>
+                    <div class="4u 12u(mobile)">
+                        <f:if condition="{t3themesConf.colPos2}">
+                            <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{pageUid: '{data.uid}', colPos: '{t3themesConf.colPos2}'}" />
+                        </f:if>
+                    </div>
+                    <div class="4u 12u(mobile)">
+                        <f:if condition="{t3themesConf.colPos3}">
+                            <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{pageUid: '{data.uid}', colPos: '{t3themesConf.colPos3}'}" />
+                        </f:if>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="12u">
+
+                        <!-- Copyright -->
+                        <f:cObject typoscriptObjectPath="lib.navigation.footer" />
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </f:section>
+
+</html>

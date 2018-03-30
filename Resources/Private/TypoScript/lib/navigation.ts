@@ -294,6 +294,7 @@ lib.navigation.footer {
 
 		1 = TMENU
 		1 {
+			wrap = <nav id="footer-nav"><ul>|</ul></nav>
 			noBlur = 1
 			expAll = 1
 
